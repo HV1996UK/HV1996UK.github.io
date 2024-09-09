@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" text="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrcaKeep - Sign Up</title>
+    <link rel="icon" href="images/icons8-orca-32.png" type="images">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <h1>OrcaKeep 🐋</h1>
+        </div>
+        <div class="header-center">
+            <input type="text" id="search-input" placeholder="Search for accommodations...">
+            <button id="search-button">
+                <img src="images/icons8-magnifier-32.png" alt="Search" class="search-icon">
+            </button>
+        </div>
+        <div class="header-right">
+            <button class="nav-button" onclick="window.location.href='index.html';">Home</button>
+            <button class="nav-button">FAQs</button>
+            <button class="nav-button" id="login-button">Log In</button>
+            <button class="nav-button" onclick="window.location.href='signup.html';">Register</button>
+        </div>
+
+                        <!-- Log In Dropdown Form -->
+        <div id="login-dropdown" class="login-dropdown hidden">
+                            <form id="login-form" action="" method="">
+                                <div class="form-group">
+                                    <label for="login-email">Email:</label>
+                                    <input type="email" id="login-email" name="email" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="login-password">Password:</label>
+                                    <input type="password" id="login-password" name="password" required>
+                                </div>
+                                    <button type="submit" class="submit-button">Log In</button>
+                            </form>
+        </div>
+                   
+    </header>
+
+    <main>
+        <!-- Centered Sign-up Form -->
+        <section id="signup-section" class="signup-container">
+            <h2>Create Your Account</h2>
+            <form id="signup-form" action="" method="">
+                <div class="form-group">
+                    <label for="first_name">First name:</label>
+                    <input type="text" id="first_name" name="first_name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="last_name">Last name:</label>
+                    <input type="text" id="last_name" name="last_name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="telephone">Telephone:</label>
+                    <input type="number" name="telephone" id="telephone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="none" value="none">
+                    <label for="none">Prefer not to say</label>
+                </div>
+                
+                <div class="form-group">
+                    <label for="country">Country:</label>
+                    <select name="country" id="country">
+                        <option value="England">England</option>
+                        <option value="Scottland">Scottland</option>
+                        <option value="Wales">Wales</option>
+                        <option value="Ireland">Ireland</option>
+                        <option value="Canada">Canada</option>
+                        <option value="China">China</option>
+                        <option value="Nigeria">Nigeria</option>
+                        <option value="Vietnam">Vietnam</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subscribe">Do you want to receive our weekly notifications?</label>
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                </div>
+                
+                <button type="submit" class="submit-button">Sign up</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer content copied from the main page to maintain consistency -->
+        <div class="footer-left">
+            <h2>About Us</h2>
+            <p>Living with the right people beats living on your own any day. When you live with the right people, you don't just share your space - you share your life.</p>
+            <p>They become more than your flatmates, more than the people ahead of you in the queue for the bathroom. They're your friends.</p>
+            <p>OrcaKeep is all about helping you find those people. The people who make sharing amazing.</p>
+        </div>
+        <div class="footer-center">
+            <h2>Contact Details</h2>
+            <p>Address: 752 Avenue Street, Denver</p>
+            <p>Email: <a href="mailto:AaronStone@gmail.com">AaronStone@gmail.com</a></p>
+            <p><img src="images/icons8-whatsapp-48.png" alt="WhatsApp" class="whatsapp-icon"> WhatsApp: +44 7483742864</p>
+            <p>Mon to Fri: 9am - 8:30pm</p>
+            <p>Saturday: 9am - 5:30pm</p>
+            <p>Sunday: Closed</p>
+        </div>
+        <div class="support">
+            <h2>Support</h2>
+               <form action="" method="">
+                <div class="form-group">
+                    <label for="first_name_support">First Name:</label>
+                    <input type="text" id="first_name_support" name="first_name" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="last_name_support">Last Name:</label>
+                    <input type="text" id="last_name_support" name="last_name" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="email_support">Email:</label>
+                    <input type="email" id="email_support" name="email" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="issue">Please, briefly explain your issues:</label>
+                    <textarea name="issue" id="issue" cols="30" rows="5"></textarea>
+                </div>
+        
+                <button type="submit" class="submit-button">Send</button>
+               </form>
+        </div>
+        <div class="footer-follow-us">
+            <h2>Follow Us</h2>
+            <a href="https://www.brightnetwork.co.uk/dashboard/" target="_blank"><img src="images/icons8-facebook-48.png" alt="Facebook" class="social-icon"></a>
+            <a href="https://www.brightnetwork.co.uk/dashboard/" target="_blank"><img src="images/icons8-instagram-48.png" alt="Instagram" class="social-icon"></a>
+            <a href="https://www.brightnetwork.co.uk/dashboard/" target="_blank"><img src="images/icons8-twitterx-50.png" alt="Twitter" class="social-icon"></a>
+            <a href="https://www.brightnetwork.co.uk/dashboard/" target="_blank"><img src="images/icons8-linkedin-48.png" alt="LinkedIn" class="social-icon"></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
